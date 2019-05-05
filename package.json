@@ -1,0 +1,15 @@
+{
+  "name": "leb-generator",
+  "version": "0.1.0",
+  "description": "Lernergebnisberichte erzeugen aus vordefinierten Textbausteinen.",
+  "author": "Nils Ramsperger",
+  "scripts": {
+    "test": "node_modules/jasmine-node/bin/jasmine-node spec --verbose"
+  },
+  "devDependencies": {
+    "@types/jasmine": "^3.3.12",
+    "jasmine-core": "^3.4.0",
+    "jasmine-node": "^1.16.2",
+    "typescript": "^3.4.5"
+  }
+}
