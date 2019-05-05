@@ -1,4 +1,4 @@
-import { LebGenerator } from "../src/businessLogic/LebGenerator";
+import { LebGenerator } from "../../src/businessLogic/LebGenerator";
 
 describe('LebGenerator', () => {
     it('should instanciate', () => {
