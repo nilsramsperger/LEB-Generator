@@ -4,7 +4,7 @@
   "description": "Lernergebnisberichte erzeugen aus vordefinierten Textbausteinen.",
   "author": "Nils Ramsperger",
   "scripts": {
-    "test": "node_modules/jasmine-node/bin/jasmine-node spec --verbose"
+    "test": "node_modules/.bin/tsc && node_modules/jasmine-node/bin/jasmine-node spec --verbose"
   },
   "devDependencies": {
     "@types/jasmine": "^3.3.12",
