@@ -1,15 +1,18 @@
 import { DataStore } from "../DataStore";
 import { DataDto } from "../dto/DataDto";
 import { LebGenerator } from "../LebGenerator";
+import { TopicImpl } from "./TopicImpl";
 
 export class LebGeneratorImpl implements LebGenerator {
-    private _data: DataDto = new DataDto();
+    private _topics: Array<TopicImpl> = [];
 
     public constructor(private _dataStore: DataStore) {
-        _dataStore.load().then(data => this._data = data);
+        _dataStore.load().then(data => {
+            this._topics = data.topics.map(TopicImpl.createFrom)
+        });
     }
 
     public getTopicNames(): Array<String> {
-        return this._data.topics.map(t => t.name);
+        return this._topics.map(t => t.name);
     }
 }
