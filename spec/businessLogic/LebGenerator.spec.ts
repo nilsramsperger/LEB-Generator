@@ -1,6 +1,4 @@
 import { LebGeneratorImpl } from "../../src/businessLogic/impl/LebGeneratorImpl";
-import { DataStore } from "../../src/businessLogic/DataStore";
-import { DataDto } from "../../src/businessLogic/dto/DataDto";
 import { instance, mock, verify, when } from 'ts-mockito';
 import { TestDataDto } from "../testData/TestDataDto";
 import { LebGenerator } from "../../src/businessLogic/LebGenerator";

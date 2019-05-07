@@ -1,5 +1,4 @@
 import { DataDto } from "../../src/businessLogic/dto/DataDto";
-import { TestTopicDto } from "./TestTopicDto";
 import { TopicDto } from "../../src/businessLogic/dto/TopicDto";
 
 export class TestDataDto extends DataDto {

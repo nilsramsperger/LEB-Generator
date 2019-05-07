@@ -1,10 +1,10 @@
 import { DataStore } from "../DataStore";
-import { DataDto } from "../dto/DataDto";
 import { LebGenerator } from "../LebGenerator";
 import { TopicImpl } from "./TopicImpl";
+import { Topic } from "../Topic";
 
 export class LebGeneratorImpl implements LebGenerator {
-    private _topics: Array<TopicImpl> = [];
+    private _topics: Array<Topic> = [];
 
     public constructor(private _dataStore: DataStore) {
         _dataStore.load().then(data => {
