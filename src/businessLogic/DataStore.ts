@@ -1,7 +1,7 @@
-import { Data } from "./impl/Data";
+import { DataDto } from "./dto/DataDto";
 
 export interface DataStore {
-    load(): Promise<Data>;
+    load(): Promise<DataDto>;
 
-    store(data: Data): Promise<void>;
+    store(data: DataDto): Promise<void>;
 }
