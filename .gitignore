@@ -4,3 +4,4 @@ src/**/*.js.map
 spec/**/*.js
 spec/**/*.js.map
 .DS_Store
+coverage
