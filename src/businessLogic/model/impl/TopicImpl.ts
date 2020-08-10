@@ -14,6 +14,10 @@ export class TopicImpl implements Topic {
         return this._name;
     }
 
+    public set name(name: String) {
+        this._name = name;
+    }
+
     public toDto(): TopicDto {
         const dto = new TopicDto();
         dto.name = this._name;

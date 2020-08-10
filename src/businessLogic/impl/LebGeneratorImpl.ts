@@ -12,6 +12,12 @@ export class LebGeneratorImpl implements LebGenerator {
         });
     }
 
+    public createTopic(name: String): void {
+        const topic = new TopicImpl();
+        topic.name = name;
+        this._topics.push(topic);
+    }
+
     public getTopics(): Array<Topic> {
         return this._topics;
     }
