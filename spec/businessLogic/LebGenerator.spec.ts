@@ -3,7 +3,7 @@ import { instance, mock, verify, when } from 'ts-mockito';
 import { DataDtoBuilder } from "../data/DataDtoBuilder";
 import { LebGenerator } from "../../src/businessLogic/LebGenerator";
 import { FakeDataStore } from "../fakes/FakeDataStore";
-import { TopicDtoBuilder } from "../data/TestTopicBuilder";
+import { TopicDtoBuilder } from "../data/TopicDtoBuilder";
 import 'source-map-support/register'
 import { TopicDto } from "../../src/businessLogic/dto/TopicDto";
 

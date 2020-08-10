@@ -1,8 +1,8 @@
 import { mock, when, instance } from "ts-mockito";
-import { FakeDataStore } from "../fakes/FakeDataStore";
-import { DataDtoBuilder } from "../data/DataDtoBuilder";
-import { LebGeneratorFactory } from "../../src/businessLogic/LebGeneratorFactory";
-import { LebGenerator } from "../../src/businessLogic/LebGenerator";
+import { FakeDataStore } from "../../fakes/FakeDataStore";
+import { DataDtoBuilder } from "../../data/DataDtoBuilder";
+import { LebGeneratorFactory } from "../../../src/businessLogic/factories/LebGeneratorFactory";
+import { LebGenerator } from "../../../src/businessLogic/LebGenerator";
 
 describe('LebGeneratorFactory', () => {
     it('should create an instance of LebGenerator', () => {
