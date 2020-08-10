@@ -1,9 +1,9 @@
 import { LebGeneratorImpl } from "../../src/businessLogic/impl/LebGeneratorImpl";
 import { instance, mock, verify, when } from 'ts-mockito';
-import { TestDataDto as DataDtoBuilder } from "../data/DataDtoBuilder";
+import { DataDtoBuilder } from "../data/DataDtoBuilder";
 import { LebGenerator } from "../../src/businessLogic/LebGenerator";
 import { FakeDataStore } from "../fakes/FakeDataStore";
-import { TestTopicDto as TopicDtoBuilder } from "../data/TestTopicBuilder";
+import { TopicDtoBuilder } from "../data/TestTopicBuilder";
 import 'source-map-support/register'
 import { TopicDto } from "../../src/businessLogic/dto/TopicDto";
 
@@ -65,13 +65,13 @@ describe('LebGenerator', () => {
         // Act
         const lebGenerator: LebGenerator = new LebGeneratorImpl(instance(mockDataStore));
         await delay(10);
-        const topicNames = lebGenerator.getTopics();
+        const topics = lebGenerator.getTopics();
 
         // Assert
-        expect(topicNames).not.toBeNull();
-        expect(topicNames.length).toBe(2);
-        expect(topicNames[0].toDto()).toEqual(expectedTopicDto1);
-        expect(topicNames[1].toDto()).toEqual(expectedTopicDto2);
+        expect(topics).not.toBeNull();
+        expect(topics.length).toBe(2);
+        expect(topics[0].toDto()).toEqual(expectedTopicDto1);
+        expect(topics[1].toDto()).toEqual(expectedTopicDto2);
         done();
     });
 
