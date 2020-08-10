@@ -1,3 +1,5 @@
+import { Topic } from "./model/Topic";
+
 export interface LebGenerator {
-    getTopicNames(): Array<String>;
+    getTopics(): Array<Topic>;
 }

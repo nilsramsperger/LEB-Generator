@@ -1,7 +1,7 @@
 import { Topic } from "../Topic";
 import { TopicDto } from "../../dto/TopicDto";
 
-export class TopicImpl implements Topic {
+export class TopicImpl implements Topic {  
     private _name: String = '';
 
     public static createFrom(dto: TopicDto) {
@@ -13,5 +13,10 @@ export class TopicImpl implements Topic {
     public get name(): String {
         return this._name;
     }
-    
+
+    public toDto(): TopicDto {
+        const dto = new TopicDto();
+        dto.name = this._name;
+        return dto;
+    }
 }

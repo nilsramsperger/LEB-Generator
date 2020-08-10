@@ -12,7 +12,7 @@ export class LebGeneratorImpl implements LebGenerator {
         });
     }
 
-    public getTopicNames(): Array<String> {
-        return this._topics.map(t => t.name);
+    public getTopics(): Array<Topic> {
+        return this._topics;
     }
 }
