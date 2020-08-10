@@ -1,5 +1,5 @@
 import { Topic } from "../Topic";
-import { TopicDto } from "../dto/TopicDto";
+import { TopicDto } from "../../dto/TopicDto";
 
 export class TopicImpl implements Topic {
     private _name: String = '';

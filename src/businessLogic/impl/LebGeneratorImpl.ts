@@ -1,7 +1,7 @@
 import { DataStore } from "../DataStore";
 import { LebGenerator } from "../LebGenerator";
-import { TopicImpl } from "./TopicImpl";
-import { Topic } from "../Topic";
+import { TopicImpl } from "../model/impl/TopicImpl";
+import { Topic } from "../model/Topic";
 
 export class LebGeneratorImpl implements LebGenerator {
     private _topics: Array<Topic> = [];
